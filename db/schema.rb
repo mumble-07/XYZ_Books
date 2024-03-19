@@ -37,6 +37,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_19_022041) do
     t.string "isbn_13"
     t.integer "list_price"
     t.string "publication_year"
+    t.string "publisher"
     t.string "edition"
     t.string "image_url"
     t.integer "publisher_id"

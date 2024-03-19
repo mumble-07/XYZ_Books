@@ -85,6 +85,7 @@ class BookTest < ActiveSupport::TestCase
     book1.list_price = 1000
     book1.publication_year = 2004
     # book1.publisher = "Paste Magazine"
+    
     assert_not book1.save, "Saved the book without the book publisher"
   end
 end

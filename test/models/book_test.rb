@@ -10,6 +10,7 @@ class BookTest < ActiveSupport::TestCase
     # book1.isbn_13 = "978-1-891830-85-3"
     # book1.list_price = 1000
     # book1.publication_year = 2004
+    # book1.publisher = "Paste Magazine"
     # book1.edition = "Book 2"
     # book1.image_url = "https://www.google.com/"
 
@@ -77,19 +78,13 @@ class BookTest < ActiveSupport::TestCase
     assert_not book1.save, "Saved the book without the publication year"
   end
 
-  test "this test should not save because there is no book publication year" do
+  test "this test should not save because there is no book publisher" do
     book1 = Book.new
-    # book1.title = "American Elf"
+    book1.title = "American Elf"
     book1.isbn_10 = "1-891-83085-6"
-
-    # book1.isbn_10 = "1-891-83085-6"
-    # book1.isbn_13 = "978-1-891830-85-3"
-    # book1.list_price = 1000
-    # book1.publication_year = 2004
-    # book1.edition = "Book 2"
-    # book1.image_url = "https://www.google.com/"
-
-    assert_not book1.save, "Saved the book without the publication year"
+    book1.list_price = 1000
+    book1.publication_year = 2004
+    # book1.publisher = "Paste Magazine"
+    assert_not book1.save, "Saved the book without the book publisher"
   end
-
 end

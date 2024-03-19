@@ -2,6 +2,7 @@ class Book < ApplicationRecord
   validates :title, presence: true
   validates :list_price, presence: true
   validates :publication_year, presence: true
+  validates :publisher, presence: true
   validate :isbn_presence_and_uniqueness
 
   private

@@ -70,3 +70,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+#ISBN Converter Gem
+gem 'isbn-converter', '~> 0.1.0' # https://rubygems.org/gems/isbn-converter/versions/0.1.0
+
+#Tailwind Gem
+gem 'tailwindcss-rails', '~> 2.3'

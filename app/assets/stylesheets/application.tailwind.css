@@ -11,3 +11,83 @@
 }
 
 */
+.nav-font {
+  color: #161960;
+}
+
+.header-font,
+.header-font3 {
+  color: #151962;
+}
+
+.header-font2 {
+  color: #6d6bcc;
+}
+
+.svg {
+  transform: rotate(-90deg);
+}
+
+.svg2 {
+  transform: rotate(-90deg);
+}
+
+.save {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(mask-group.png);
+  color: #fff;
+  padding: 10px 0;
+}
+
+.save-text {
+  text-align: center;
+}
+
+.hero-main-container {
+  background-size: cover;
+  background-position: center;
+  background-image: url(banner-bg.png);
+}
+
+#inquire {
+  font-family: cursive;
+  color: #5fd2fa;
+  transform: rotate(-10deg);
+}
+
+.hero-illustration,
+.group-pic {
+  max-width: 80%;
+  height: auto;
+}
+
+.books-img {
+  width: 60%;
+  height: auto;
+}
+
+.books-main-container {
+  /* background-image: url(blue-bg-2.png); */
+  background-position: bottom;
+  background-size: cover;
+}
+
+.books-arrow {
+  transform: rotate(180deg);
+}
+
+.shop-images {
+  width: 15%;
+  height: auto;
+}
+
+#input-email {
+  background-image: url(path-329.svg);
+  background-position: right;
+  padding-left: 20px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}

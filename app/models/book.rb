@@ -1,4 +1,8 @@
 class Book < ApplicationRecord
+
+  has_many :book_author, dependent: :destroy
+  has_many :books, through: :book_author
+
   validates :title, presence: true
   validates :list_price, presence: true
   validates :publication_year, presence: true

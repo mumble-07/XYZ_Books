@@ -1,1 +1,37 @@
 <div> THIS IS THE HOME PAGE </div>
+<% @results.each do |result| %>
+
+<div class="bg-white">
+  <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+    
+    <!-- Product image -->
+    <div class="lg:max-w-lg lg:self-end">
+      <h1 class="text-left text-4xl font-bold text-blue-900 pb-24">Search Result</h1>
+      <div class="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg">
+        <img src="<%= result.image_url %>" class="h-full w-full object-contain object-center">
+      </div>
+    </div>
+
+    <!-- Product details -->
+    <div class="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center">
+      <div class="mt-4">
+          <h1 class="text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl"><%= result.title %></h1>
+        </div>
+
+        <section aria-labelledby="information-heading" class="mt-4">
+          <h2 id="information-heading" class="sr-only"></h2>
+
+          <div class="flex flex-col">
+            <p class="text-lg text-blue-900 sm:text-xl font-bold pb-12 pt-12">by <span><%= result.authors.pluck(:first_name, :last_name).map { |name| name.join(" ") }.join(", ") %> <br></p></p>
+            <p class="text-lg text-blue-900 sm:text-xl font-bold pb-2">Edition: <span class="text-blue-500 font-semibold"> <%= result.edition %></span></p>
+            <p class="text-lg text-blue-900 sm:text-xl font-bold pb-2">Price: <span class="text-blue-500 font-semibold"> PHP <%= result.price %></span></p>
+            <p class="text-lg text-blue-900 sm:text-xl font-bold pb-2">ISBN: <span class="text-blue-500 font-semibold"> <%= result.isbn_13 %></span></p>
+            <p class="text-lg text-blue-900 sm:text-xl font-bold pb-2">Publication Year: <span class="text-blue-500 font-semibold"> <%= result.publication_year %></span></p>
+            <p class="text-lg text-blue-900 sm:text-xl font-bold pb-2">Publisher: <span class="text-blue-500 font-semibold"> <%= result.publisher.name %></span></p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

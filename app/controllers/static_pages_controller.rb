@@ -23,9 +23,9 @@ class StaticPagesController < ApplicationController
         results.map { |result| {
           id: result.id,
           title: result.title,
-          author: result.authors.pluck(:first_name, :last_name).map { |name| name.join(" ") }.join(", "),
+          author: result.authors.pluck(:first_name, :middle_name, :last_name).map { |name| name.join(" ") }.join(", "),
           edition: result.edition,
-          price: result.price,
+          price: result.list_price,
           isbn_10: result.isbn_10,
           isbn_13: result.isbn_13,
           publisher: result.publisher.name

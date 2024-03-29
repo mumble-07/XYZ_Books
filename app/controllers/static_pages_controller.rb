@@ -5,7 +5,6 @@ class StaticPagesController < ApplicationController
 
   def search
     parameter = params[:search]
-
     if ISBN_Tools.is_valid?(parameter)
       @results = Book.where("books.isbn_10 || books.isbn_13 LIKE ?", ["%#{parameter}%"])
     else

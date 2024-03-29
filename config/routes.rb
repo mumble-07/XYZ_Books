@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root 'static_pages#index'
-  get '/search' => 'static_page#search'
-  get '/books/:isbn' => 'static_page#book_api'
-  get '/convert/:isbn' => 'static_page#isbn_converter'
+  get '/search' => 'static_pages#search'
+  get '/books/:isbn' => 'static_pages#api_book'
+  get '/convert/:isbn' => 'static_pages#convert_isbn'
   
 end

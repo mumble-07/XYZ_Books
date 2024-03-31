@@ -69,6 +69,7 @@ GEM
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     base64 (0.2.0)
+    bigdecimal (3.1.7)
     bindex (0.8.1)
     bootsnap (1.18.3)
       msgpack (~> 1.2)
@@ -102,9 +103,13 @@ GEM
       rdoc
       reline (>= 0.4.2)
     isbn-converter (0.1.0)
+    isbn-tools (0.1.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    lisbn (0.3.2)
+      nokogiri
+      nori (~> 2.0)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -131,6 +136,8 @@ GEM
     nio4r (2.7.0)
     nokogiri (1.16.3-x86_64-linux)
       racc (~> 1.4)
+    nori (2.7.0)
+      bigdecimal
     pg (1.5.6)
     psych (5.1.2)
       stringio
@@ -228,7 +235,9 @@ DEPENDENCIES
   debug
   importmap-rails
   isbn-converter (~> 0.1.0)
+  isbn-tools (~> 0.1.0)
   jbuilder
+  lisbn (~> 0.3.2)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)

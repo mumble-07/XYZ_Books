@@ -8,7 +8,7 @@ module SeedsServices
       # Example code to create book authors
       books.each_with_index do |book, index|
         author = authors[index % authors.size]
-        BookAuthor.create!(book_id: book.id, author_id: author.id)
+        BookAuthor.create!(book: book, author: author)
       end
 
       @logger.info 'BookAuthor has been created'

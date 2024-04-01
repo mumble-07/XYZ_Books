@@ -1,8 +1,7 @@
 class Book < ApplicationRecord
 
   has_many :book_authors, dependent: :destroy
-  has_many :books, through: :book_authors
-  has_many :authors
+  has_many :authors, through: :book_authors
   belongs_to :publisher
 
   validates :title, presence: true

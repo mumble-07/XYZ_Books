@@ -74,6 +74,6 @@ end
 #ISBN Converter Gem
 gem 'isbn-converter', '~> 0.1.0' # https://rubygems.org/gems/isbn-converter/versions/0.1.0
 gem 'isbn-tools', '~> 0.1.0' # https://rubygems.org/gems/isbn-tools
-gem 'lisbn', '~> 0.3.2' # https://rubygems.org/gems/lisbn
+# gem 'lisbn', '~> 0.3.2' # https://rubygems.org/gems/lisbn
 #Tailwind Gem
 gem 'tailwindcss-rails', '~> 2.3'

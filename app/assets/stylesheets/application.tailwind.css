@@ -80,7 +80,11 @@
   color: #6160F6;
 }
 
-.small_text {
+.light_blue_text2 {
+  color: #5FD2F9;
+}
+
+.dark_text {
   color: #221C55;
 }
 
@@ -101,9 +105,11 @@
   height: auto;
 }
 
-.books-img {
-  width: 60%;
-  height: auto;
+
+.image_border {
+  border: 16px solid rgb(220, 226, 232, 0.75);
+  border-radius: 16px;
+  display: inline-block;
 }
 
 .books-main-container {
@@ -124,8 +130,12 @@
   transform: rotate(180deg);
 }
 
-.shop-images {
-  width: 15%;
+.book_text {
+  position: relative;
+}
+
+.shop_icons {
+  width: 13%;
   height: auto;
 }
 

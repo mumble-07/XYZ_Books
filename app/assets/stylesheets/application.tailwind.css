@@ -37,37 +37,6 @@
   color: #161960;
 }
 
-.header-font,
-.header-font3 {
-  color: #151962;
-}
-
-.header-font2 {
-  color: #6d6bcc;
-}
-
-.svg {
-  transform: rotate(-90deg);
-}
-
-.svg2 {
-  transform: rotate(-90deg);
-}
-
-.cta_bg {
-  background-color: #6160f6;
-}
-
-.header-top-text {
-  text-align: center;
-}
-
-.hero-main-container {
-  background-size: cover;
-  background-position: center;
-  background-image: url(banner-bg.png);
-}
-
 .dark_blue_text {
   color: #151c55;
 }
@@ -80,9 +49,27 @@
   color: #5fd2f9;
 }
 
+.svg {
+  transform: rotate(-90deg);
+}
+
+.cta_bg {
+  background-color: #6160f6;
+}
+
 .cta_bg2 {
   background-color: #151c55;
   color: #5fd2fa;
+}
+
+.header-top-text {
+  text-align: center;
+}
+
+.hero-main-container {
+  background-size: cover;
+  background-position: center;
+  background-image: url(banner-bg.png);
 }
 
 #inquire {

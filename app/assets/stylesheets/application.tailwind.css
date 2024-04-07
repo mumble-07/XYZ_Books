@@ -101,7 +101,6 @@
   height: auto;
 }
 
-
 .image_border {
   border: 16px solid rgb(220, 226, 232, 0.75);
   border-radius: 16px;
@@ -153,4 +152,8 @@
   background-color: #D9EBFD;
   z-index: -1;
   margin: auto;
+}
+
+.gray_bg_faq {
+  background-color: #F2F5F8;
 }

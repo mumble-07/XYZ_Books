@@ -1,34 +1,63 @@
-## StaticPagesController
+# StaticPagesController Documentation
 
-This is a Ruby on Rails controller named `StaticPagesController` responsible for handling requests related to static pages, book searches, and API interactions.
+## Overview
 
-### Index Action (`index`)
+The `StaticPagesController` is a controller in a Ruby on Rails (RoR) application responsible for handling static pages and certain ISBN-related functionalities.
 
-- This action doesn't contain any logic. It typically renders the default view associated with the `index` action.
+## Methods
 
-### Search Action (`search`)
+### `index`
 
-- This action handles search requests for books based on ISBN (International Standard Book Number).
-- It retrieves the search parameter from the request parameters.
-- It checks if the provided ISBN is valid using a method `ISBN_Tools.is_valid?`.
-- If the ISBN is valid, it searches for books in the database that match the provided ISBN (both ISBN-10 and ISBN-13).
-- If books are found, it assigns them to `@results` and presumably renders a view to display them.
-- If the ISBN is not valid, it renders an error page with status code 400.
+- **Description**: Renders the index page.
+- **URL**: `/`
+- **HTTP Method**: GET
 
-### API Book Action (`api_book`)
+### `convert_isbn`
 
-- This action is designed to serve book information in JSON format for API consumption.
-- It retrieves the ISBN parameter from the request parameters.
-- It searches for books in the database that match the provided ISBN (both ISBN-10 and ISBN-13).
-- If the ISBN is valid and is a valid ISBN-13, and if books are found, it constructs a JSON response containing book details such as ID, title, author, edition, price, ISBN-10, ISBN-13, and publisher.
-- If the ISBN is not valid or if no books are found, it renders an error page with the appropriate status code (400 for invalid ISBN, 404 for not found).
+- **Description**: Converts ISBN-10 to ISBN-13 or vice versa and returns the hyphenated version of the converted ISBN.
+- **URL**: `/convert/:isbn`
+- **HTTP Method**: POST
+- **Parameters**:
+  - `isbn` (String): ISBN to be converted.
+- **Returns**: Hyphenated version of the converted ISBN.
+- **Error Handling**:
+  - Returns 400 Bad Request if the provided ISBN is invalid.
 
-### Private Methods
+### `search`
 
-- `author_full_name`: Formats the author's full name from first name, middle name, and last name.
-- `convert_isbn`: Converts an ISBN to either ISBN-10 or ISBN-13 format.
-- `render_error_page`: Renders an error page with a given status code.
-- `map_book_results`: Maps book objects to a hash containing specific book details.
-- `hyphenate_isbn`: Hyphenates an ISBN, formatting it with hyphens for better readability.
+- **Description**: Searches for books by ISBN and returns the matching results.
+- **URL**: `/search`
+- **HTTP Method**: GET
+- **Parameters**:
+  - `search` (String): ISBN to search for.
+- **Returns**: JSON object containing information about the matched books.
+- **Error Handling**:
+  - Returns 404 Not Found if no matching books are found.
+  - Returns 400 Bad Request if the provided ISBN is invalid.
 
-The controller follows typical Rails conventions for actions, parameter handling, and rendering responses. It interacts with a model named `Book` to perform database queries for book information. Additionally, it utilizes `ISBN_Tools` library to validate and manipulate ISBNs.
+### `api_book`
+
+- **Description**: Returns book information in JSON format based on the provided ISBN.
+- **URL**: `/books/:isbn`
+- **HTTP Method**: GET
+- **Parameters**:
+  - `isbn` (String): ISBN of the book to retrieve information for.
+- **Returns**: JSON object containing information about the book.
+- **Error Handling**:
+  - Returns 404 Not Found if no book is found for the provided ISBN.
+  - Returns 400 Bad Request if the provided ISBN is invalid.
+
+## Private Methods
+
+### `author_full_name`
+
+- **Description**: Formats author's full name.
+- **Parameters**:
+  - `author` (Author): Author object containing first name, middle name, and last name.
+- **Returns**: Formatted full name of the author.
+
+### `render_error_page`
+
+- **Description**: Renders an error page based on the provided status code.
+- **Parameters**:
+  - `status` (Integer): HTTP status code.

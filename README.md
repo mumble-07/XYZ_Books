@@ -1,24 +1,29 @@
-# README
+# XYZ Books
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Tools
 
-Things you may want to cover:
+- ruby 3.1.3
+- rails 7.0.4
+- tailwind 2.3
+- isbn-converter 0.1.0
+- isbn-tools 0.1.0
 
-* Ruby version
+### Code Documentation
 
-* System dependencies
+- [Controller Actions](documentations/code-documentation.md) <br>
+- [Seed Services](documentations/seeds-documentation.md)
+- [Testing]
 
-* Configuration
+### After clone-do:
 
-* Database creation
+run
 
-* Database initialization
+`bundle install` <br>
+`./bin/rails tailwindcss:install` <br>
+`rails db:create` <br>
+`rails db:migrate` <br>
+`rails db:seed` <br>
 
-* How to run the test suite
+### To start the app:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`run bin/dev`

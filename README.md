@@ -26,4 +26,5 @@ run
 
 ### To start the app:
 
-`run bin/dev`
+run
+`bin/dev`

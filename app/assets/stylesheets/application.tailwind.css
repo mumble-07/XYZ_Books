@@ -2,15 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
 
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+@layer base {
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
   }
 }
 
-*/
+
+
+.header-top {
+  font-family: 'Roboto';
+  font-weight: 500;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(header-bar.png);
+  color: #fff;
+  padding: 10px 0;
+}
+
+.header-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mirrored {
+  transform: scaleX(-1);
+}
+
+
 .nav-font {
   color: #161960;
 }
@@ -32,16 +58,11 @@
   transform: rotate(-90deg);
 }
 
-.save {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(mask-group.png);
-  color: #fff;
-  padding: 10px 0;
+.cta_bg {
+  background-color: #6160F6;
 }
 
-.save-text {
+.header-top-text {
   text-align: center;
 }
 
@@ -49,6 +70,23 @@
   background-size: cover;
   background-position: center;
   background-image: url(banner-bg.png);
+}
+
+.dark_blue_text {
+  color: #151C55;
+}
+
+.light_blue_text {
+  color: #6160F6;
+}
+
+.small_text {
+  color: #221C55;
+}
+
+.cta_bg2 {
+  background-color: #151C55;
+  color: #5FD2FA;
 }
 
 #inquire {
@@ -69,10 +107,18 @@
 }
 
 .books-main-container {
-  /* background-image: url(blue-bg-2.png); */
   background-position: bottom;
   background-size: cover;
+  background-image: url(dark_blue_bg.jpg);
 }
+
+/* .dark_blue_bg {
+  background-color: #061A36;
+  width: 100%;
+  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+  z-index: -1;
+  position: absolute;
+} */
 
 .books-arrow {
   transform: rotate(180deg);
@@ -84,7 +130,7 @@
 }
 
 #input-email {
-  background-image: url(path-329.svg);
+  background-image: url(cta_arrow.svg);
   background-position: right;
   padding-left: 20px;
   background-size: 20px;

@@ -1,9 +1,7 @@
 # XYZ Books
+XYZ Books is a versatile application designed to streamline information retrieval from students, college textbooks, and course materials. With features such as displaying product data like authors and publishers, and seamless ISBN conversion between different formats, XYZ Books simplifies the process of accessing and managing academic resources. 
 
-XYZ Books is planning to develop an application that can get information from students, college
-textbooks, and other course material. It has functionalities like displaying applicable product data (e.g.,
-authors, publishers, etc) or converting an ISBN (i.e., International Standard Book Number) to and from
-different formats.
+Get started by cloning the repository, configuring as needed, and exploring the intuitive interface. For detailed guidance, refer to the included documentation. We welcome contributions and value your feedback to continually enhance XYZ Books. Join us in this journey of knowledge discovery.
 
 ![XYZ-Books Web Page](documentations/xyz-books-wepage.png)
 

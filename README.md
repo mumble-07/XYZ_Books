@@ -1,5 +1,12 @@
 # XYZ Books
 
+XYZ Books is planning to develop an application that can get information from students, college
+textbooks, and other course material. It has functionalities like displaying applicable product data (e.g.,
+authors, publishers, etc) or converting an ISBN (i.e., International Standard Book Number) to and from
+different formats.
+
+![XYZ-Books Web Page](documentations/xyz-books-wepage.png)
+
 ### Tools
 
 - ruby 3.1.3

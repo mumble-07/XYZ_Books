@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -13,9 +12,8 @@
   }
 }
 
-
 .header-top {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 500;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,7 +32,6 @@
 .mirrored {
   transform: scaleX(-1);
 }
-
 
 .nav-font {
   color: #161960;
@@ -58,7 +55,7 @@
 }
 
 .cta_bg {
-  background-color: #6160F6;
+  background-color: #6160f6;
 }
 
 .header-top-text {
@@ -72,26 +69,25 @@
 }
 
 .dark_blue_text {
-  color: #151C55;
+  color: #151c55;
 }
 
 .light_blue_text {
-  color: #6160F6;
+  color: #6160f6;
 }
 
 .light_blue_text2 {
-  color: #5FD2F9;
+  color: #5fd2f9;
 }
 
-
 .cta_bg2 {
-  background-color: #151C55;
-  color: #5FD2FA;
+  background-color: #151c55;
+  color: #5fd2fa;
 }
 
 #inquire {
   font-family: cursive;
-  color: #5FD2F9;
+  color: #5fd2f9;
   transform: rotate(-10deg);
 }
 
@@ -144,16 +140,43 @@
 }
 
 .light_blue_box {
-  background-color: #4299F7;
+  background-color: #4299f7;
 }
 
 .overlay_box {
   position: absolute;
-  background-color: #D9EBFD;
+  background-color: #d9ebfd;
   z-index: -1;
   margin: auto;
 }
 
 .gray_bg_faq {
-  background-color: #F2F5F8;
+  background-color: #f2f5f8;
+}
+
+.outline_search {
+  border-color: #4299f7;
+}
+
+.footer_sub_text {
+  color: #505e72;
+  font-weight: 600;
+}
+
+.footer_sub_text:hover {
+  color: #151c55;
+}
+
+.message_icon_bg {
+  background-color: #5fd2fa;
+}
+
+.socials_icon {
+  background-color: #F2F2FF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
 }

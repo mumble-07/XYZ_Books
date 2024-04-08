@@ -10,6 +10,7 @@ Get started by cloning the repository, configuring as needed, and exploring the 
 - [Controller Actions](documentations/code-documentation.md) <br>
 - [Seed Services](documentations/seeds-documentation.md)
 - [Testing](documentations/testing.md)
+- [Database Design-Diagram](https://dbdiagram.io/d/XYZBooks-65f8e4b3ae072629ce579976)
 
 ## Tools
 

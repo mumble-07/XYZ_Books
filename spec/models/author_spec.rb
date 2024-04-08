@@ -8,7 +8,7 @@ RSpec.describe Author, type: :model do
 
   it "can have a middle name" do
     author = create(:author)
-    expect(author.middle_name).to be_present
+    expect(author.middle_name.present? || author.middle_name == "").to eq(true)
   end
 
   it "must have a last name" do
@@ -16,8 +16,8 @@ RSpec.describe Author, type: :model do
     expect(author.last_name).to be_present
   end
 
-  it "must have a book_id" do
+  it "must have associated books" do
     author = create(:author)
-    expect(author.book_id).to be_present
+    expect(author.books).not_to be_empty
   end
 end

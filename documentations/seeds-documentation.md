@@ -37,3 +37,7 @@ To seed the database, run `rails db:seed`.
 - The seed files utilize a service-oriented approach for better code organization and maintainability.
 - Each service class encapsulates specific functionality, promoting separation of concerns.
 - The seed data includes publishers, authors, books, and their associations, providing a comprehensive initial dataset for the application.
+
+---
+
+(c) mumble-dev

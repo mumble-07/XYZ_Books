@@ -61,3 +61,7 @@ The `StaticPagesController` is a controller in a Ruby on Rails (RoR) application
 - **Description**: Renders an error page based on the provided status code.
 - **Parameters**:
   - `status` (Integer): HTTP status code.
+
+---
+
+(c) mumble-dev

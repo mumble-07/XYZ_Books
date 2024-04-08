@@ -81,3 +81,6 @@ OR
 rspec spec/models/author_spec.rb
 ```
 
+---
+
+(c) mumble-dev

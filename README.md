@@ -4,6 +4,15 @@ XYZ Books is a versatile application designed to streamline information retrieva
 
 Get started by cloning the repository, configuring as needed, and exploring the intuitive interface. For detailed guidance, refer to the included documentation. We welcome contributions and value your feedback to continually enhance XYZ Books. Join us in this journey of knowledge discovery.
 
+## Code Documentation
+
+- [API Documentation](https://documenter.getpostman.com/view/15112734/2sA35MyJi7) <br>
+- [Controller Actions](documentations/code-documentation.md) <br>
+- [Seed Services](documentations/seeds-documentation.md)
+- [Testing](documentations/testing.md)
+- WROTE rspec testing(9 Model test and 8 request test)
+  ![RSPEC](documentations/rspec.png)
+
 ## Tools
 
 - ruby 3.1.3
@@ -12,13 +21,7 @@ Get started by cloning the repository, configuring as needed, and exploring the 
 - isbn-converter 0.1.0
 - isbn-tools 0.1.0
 - postman
-
-## Code Documentation
-
-- [API Documentation](https://documenter.getpostman.com/view/15112734/2sA35MyJi7) <br>
-- [Controller Actions](documentations/code-documentation.md) <br>
-- [Seed Services](documentations/seeds-documentation.md)
-- [Testing]
+- factory_bot_rails
 
 ## After clone-do:
 

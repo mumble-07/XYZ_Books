@@ -39,6 +39,11 @@ run
 run
 `bin/dev`
 
+## To run rspec test:
+
+run
+`rspec`
+
 ---
 
 ## XYZ Books Full Webpage

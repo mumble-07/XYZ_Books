@@ -23,6 +23,7 @@ Get started by cloning the repository, configuring as needed, and exploring the 
 ## After clone-do:
 
 run
+
 `cd XYZ_Books` <br>
 `bundle install` <br>
 `./bin/rails tailwindcss:install` <br>

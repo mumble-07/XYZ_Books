@@ -1,7 +1,7 @@
 # RSpec Testing Documentation
 
 - Wrote rspec testing(9 Model test and 8 request test)
-  ![RSPEC](documentations/rspec.png)
+  ![RSPEC](rspec.png)
 
 ## Introduction
 

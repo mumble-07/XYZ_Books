@@ -10,8 +10,6 @@ Get started by cloning the repository, configuring as needed, and exploring the 
 - [Controller Actions](documentations/code-documentation.md) <br>
 - [Seed Services](documentations/seeds-documentation.md)
 - [Testing](documentations/testing.md)
-- WROTE rspec testing(9 Model test and 8 request test)
-  ![RSPEC](documentations/rspec.png)
 
 ## Tools
 

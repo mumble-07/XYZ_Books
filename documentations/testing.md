@@ -1,5 +1,8 @@
 # RSpec Testing Documentation
 
+- Wrote rspec testing(9 Model test and 8 request test)
+  ![RSPEC](documentations/rspec.png)
+
 ## Introduction
 
 This document serves as documentation for the RSpec tests written for the models, request specs, and factories in the Rails application. RSpec is a testing tool for Ruby that is widely used in the Rails community to ensure the correctness and reliability of code.
